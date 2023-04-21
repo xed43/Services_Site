@@ -1,0 +1,199 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("https://images.unsplash.com/photo-1600880292203-757bb62b4baf?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80")
+    center center / cover;
+  background-repeat: no-repeat;
+  background-blend-mode: multiply;
+  background-color: rgb(120, 120, 120);
+  color: rgb(99, 99, 99);
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100%;
+  overflow-y: hidden;
+  overflow-x: hidden;
+}
+
+.container {
+  padding: 50px;
+  border: 5px solid black;
+}
+
+header {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 10vh;
+  background: transparent;
+  color: black;
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+
+  background: transparent;
+}
+
+a:hover {
+  background: orangered;
+  color: black;
+  font-style: italic;
+  font-size: 17px;
+}
+
+main {
+  width: 100%;
+  height: 90vh;
+  background: transparent;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-info {
+  width: 60rem;
+  height: 20rem;
+  margin-top: 0%;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px;
+}
+
+.main-info > h1 {
+  color: white;
+  padding: 30px;
+  font-size: 2.8rem;
+  text-transform: uppercase;
+}
+
+.main-info > p {
+  color: white;
+  text-align: center;
+  font-size: 120%;
+  line-height: 50px;
+}
+
+.logo {
+  letter-spacing: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  color: white;
+}
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin-left: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.menu_item {
+  padding: 1rem;
+  font-size: 15px;
+}
+
+.demo_btn {
+  background: rgb(228, 43, 43);
+  height: 40px;
+  width: 100px;
+  border: 0;
+  outline: 1px solid black;
+  border-radius: 20px;
+  margin: 20px;
+  transition: all 0.2s ease-in-out;
+}
+
+.demo_btn:hover {
+  background: black;
+  color: white;
+  transform: scale(1.1);
+}
+
+.demo_btn:active {
+  transform: translateY(2%);
+}
+
+@media screen and (max-width: 1230px) {
+  body {
+    background: url("https://images.unsplash.com/photo-1541746972996-4e0b0f43e02a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80")
+      center center / cover;
+  }
+  .container {
+    text-align: center;
+  }
+  .logo {
+    display: none;
+  }
+
+  header {
+    width: 100%;
+    min-width: 40%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .demo_btn {
+    padding: 10px;
+    margin: 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  body {
+    background: url("https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8dGVhbXdvcmt8ZW58MHx8MHx8&auto=format&fit=crop&w=800&q=60")
+      center center / cover;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply;
+    background-color: rgb(109, 109, 109);
+    color: rgb(99, 99, 99);
+  }
+  .main-info > h1 {
+    font-size: 40px;
+    letter-spacing: 5px;
+  }
+
+  .main-info > h1:hover {
+    color: black;
+    background: orangered;
+  }
+  .main-info > p:hover {
+    background: black;
+  }
+  .main-info > p {
+    font-size: 18px;
+    line-height: 36px;
+  }
+  a {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: black;
+    text-shadow: 10px 10px white;
+  }
+
+  .demo_btn {
+    width: 200px;
+    height: 40px;
+
+    font-size: 16px;
+    background: darkslategray;
+    color: white;
+  }
+
+  .demo_btn:hover {
+    background: orangered;
+    color: black;
+    transform: rotate(-10deg);
+  }
+}
